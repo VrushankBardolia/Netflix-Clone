@@ -155,7 +155,6 @@ nav button {
     margin: auto;
     color: white;
     gap: 8px;
-    flex-wrap: wrap;
 }
 
 .texts {
