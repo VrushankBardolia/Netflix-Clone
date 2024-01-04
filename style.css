@@ -43,14 +43,16 @@ nav button {
 
 .btn {
     padding: 4px 12px;
-    border: none;
+    border: 1px solid white;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
 }
+
 .buttons :first-child {
     background-color: rgba(55, 55, 55, 0.5);
     color: white;
@@ -58,6 +60,7 @@ nav button {
     padding: 4px 16px;
     border-radius: 4px;
     font-weight: 500;
+    border: 1px solid white;
 }
 
 .btn-red-sm {
@@ -67,6 +70,7 @@ nav button {
     padding: 4px 8px;
     border-radius: 4px;
     font-weight: 500;
+    border: none;
 }
 
 .main .dark-box {
@@ -124,6 +128,7 @@ nav button {
     padding: 12px 20px;
     border-radius: 4px;
     font-weight: 600;
+    border: none;
 }
 
 .hero input {
@@ -141,7 +146,7 @@ nav button {
     background-color: rgb(35, 35, 35);
 }
 
-.first{
+.first {
     height: 500px;
     width: 80vw;
     display: flex;
@@ -150,66 +155,70 @@ nav button {
     margin: auto;
     color: white;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
-.texts{
+.texts {
     width: 50%;
     font-size: 24px;
     font-weight: 400;
 }
 
-.texts :first-child{
+.texts :first-child {
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 8px;
 }
 
-.imgs{
+.imgs {
     position: relative;
 }
-.imgs img{
+
+.imgs img {
     position: relative;
     z-index: 10;
     width: 555px;
 }
 
-.imgs video{
+.imgs video {
     position: absolute;
     top: 84px;
     left: 73px;
     width: 450px;
 }
 
-.third .imgs{
+.third .imgs {
     position: relative;
 }
-.third img{
+
+.third img {
     position: relative;
     z-index: 10;
     width: 555px;
 }
-.third video{
+
+.third video {
     position: absolute;
     top: 32px;
     left: 100px;
     width: 350px;
 }
 
-.faq{
+.faq {
     color: white;
 }
 
-.faq>h2{
+.faq>h2 {
     text-align: center;
     margin: 32px;
     font-size: 48px;
     font-weight: 900;
 }
 
-.faq-box{
+.faq-box {
     width: 75vw;
     margin: 12px auto;
-    padding: 24px; 
+    padding: 24px;
     background-color: #2d2d2d;
     display: flex;
     justify-content: space-between;
@@ -220,16 +229,17 @@ nav button {
     cursor: pointer;
 }
 
-.faq-box:hover{
+.faq-box:hover {
     background-color: rgb(65, 65, 65);
 }
 
-.faq p{
+.faq p {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
     margin: 60px 20px 0 20px;
 }
+
 .faq input {
     font-size: 16px;
     padding: 12px 20px;
@@ -240,7 +250,7 @@ nav button {
     font-weight: 500;
 }
 
-.faq-bottom{
+.faq-bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,4 +262,42 @@ nav button {
     align-items: center;
     gap: 8px;
     margin: 12px auto 60px;
+}
+
+footer {
+    padding: 60px;
+    width: 80vw;
+    margin: 12px auto;
+    color: white;
+}
+
+.items {
+    margin: 20px 0;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+    margin: 8px 8px 8px 0;
+}
+
+footer button {
+    background-color: rgba(55, 55, 55, 0.5);
+    color: white;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+footer span {
+    display: block;
+    margin: 20px 12px 12px 0;
 }
